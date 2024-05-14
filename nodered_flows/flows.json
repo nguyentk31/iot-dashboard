@@ -1,0 +1,1822 @@
+[
+    {
+        "id": "fea082c9970a61e7",
+        "type": "tab",
+        "label": "Init Sqlite DB",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0fcef1cc74fdce6b",
+        "type": "tab",
+        "label": "IOT Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3449d0bf5569c8b0",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "mqtt://mqtt-broker:1883",
+        "port": "1883",
+        "clientid": "nodered",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "5672170ac99d8c76",
+        "type": "ui_tab",
+        "name": "Chart",
+        "icon": "show_chart",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "3861c5b43cfd1bf1",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#005475",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#005475",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#005475",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#008bc1",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#005475",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "013e9385b9f24553",
+        "type": "ui_group",
+        "name": "",
+        "tab": "5672170ac99d8c76",
+        "order": 1,
+        "disp": true,
+        "width": "28",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "ad674f65122886d4",
+        "type": "sqlitedb",
+        "db": "/data/lab4db.sqlite",
+        "mode": "RWC"
+    },
+    {
+        "id": "ce0b4f3c1e3099c8",
+        "type": "ui_tab",
+        "name": "Log",
+        "icon": "fa-table",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "84992abfa43f187f",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 3,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "38afb03de048d41e",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 5,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "f9b3a228c1a470c7",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 6,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "2f92700beb815946",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 7,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "403f12fd901afccd",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 8,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "48252053b7da6b98",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 9,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "5b5e9ec56c5e5fd5",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 10,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "353c9e8c53958a45",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 11,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "91622819c20a79b4",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 12,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "572e5d1a26679fa7",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 13,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "bec1f17d620107c5",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 14,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "dcd1c3dd2d97c435",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 15,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "9494bf7f68529454",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 16,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "9c77adf01dc3bd04",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "013e9385b9f24553",
+        "order": 17,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "cb36f86f0e36adb3",
+        "type": "ui_group",
+        "name": "",
+        "tab": "ce0b4f3c1e3099c8",
+        "order": 2,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4a36c6c0d1c51f24",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "cb36f86f0e36adb3",
+        "order": 1,
+        "width": 20,
+        "height": 1
+    },
+    {
+        "id": "55825627ceaa4854",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "532c89762ab7aacd",
+        "type": "ui_group",
+        "name": "",
+        "tab": "55825627ceaa4854",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1ad4cfd82db49721",
+        "type": "ui_tab",
+        "name": "Dashboard",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9784f4e4d5314667",
+        "type": "ui_group",
+        "name": "",
+        "tab": "1ad4cfd82db49721",
+        "order": 1,
+        "disp": true,
+        "width": 16,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f9e717a5c7db7258",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "10b3da46cfeae125",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f1d7c17bb43743ed",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3bb79c15b5d3c048",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "48e8e005e8863fdf",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "dc992103c92b581e",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0a4dcc5b16316e17",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c84da087771b5458",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "2a8cb948427a3228",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4d870345a1aad558",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "65749474ed79a57a",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7cd5dd1088f69ef9",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "98b9d43b903aadeb",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "52d374de85b76735",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "763ae860abd70422",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 17,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "4d6289509bcab542",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 19,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0f6c8561cb35be34",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "47888ecd27238b51",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "712df2dccf6d8337",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 23,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "8d865503d804071d",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bda364ab7817022b",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 25,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ec522a918de2470e",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 26,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "789b5d3e8e402941",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "63598a84d2d672f4",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 29,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "44ac54f9b1877fa2",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 30,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "0bc7be62270e3c81",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 31,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ca0ba20efeecbd98",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "63e881984d842f34",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 33,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "b33aa79a2050d38f",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 34,
+        "width": 7,
+        "height": 1
+    },
+    {
+        "id": "877fb7052004327f",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "532c89762ab7aacd",
+        "order": 35,
+        "width": 2,
+        "height": 1
+    },
+    {
+        "id": "a6218462e057ea7a",
+        "type": "sqlite",
+        "z": "fea082c9970a61e7",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "fixed",
+        "sql": "CREATE TABLE IF NOT EXISTS Devices (\n  deviceID INTEGER PRIMARY KEY,\n  deviceName TEXT,\n  createTime INTEGER\n);",
+        "name": "Create Devices table",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "ab42c16e9126b519",
+                "110acb66325aa8fd"
+            ]
+        ]
+    },
+    {
+        "id": "0dbec1f06b7dfe3b",
+        "type": "inject",
+        "z": "fea082c9970a61e7",
+        "name": "Init DB",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 150,
+        "y": 120,
+        "wires": [
+            [
+                "a6218462e057ea7a"
+            ]
+        ]
+    },
+    {
+        "id": "d988ca2371001f10",
+        "type": "sqlite",
+        "z": "fea082c9970a61e7",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "msg.topic",
+        "sql": "INSERT INTO Devices (deviceID, deviceName, )\nVALUES (1, 'Wemos', ),\n       (2, 'Raspberrypi');\n",
+        "name": "Insert Device Tables",
+        "x": 820,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ab42c16e9126b519",
+        "type": "sqlite",
+        "z": "fea082c9970a61e7",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "fixed",
+        "sql": "CREATE TABLE IF NOT EXISTS Data (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,\n  deviceID INTEGER,\n  sensorName TEXT,\n  sensorValue FLOAT,\n  timestamp INTEGER,\n\n  FOREIGN KEY(deviceID) REFERENCES Devices(deviceID)\n);",
+        "name": "Create Data table",
+        "x": 350,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "110acb66325aa8fd",
+        "type": "function",
+        "z": "fea082c9970a61e7",
+        "name": "Insert Devices",
+        "func": "const t = Math.floor(Date.now()/1000)\nmsg.topic = `INSERT INTO Devices (deviceID, deviceName, createTime)\nVALUES (1, 'Wemos', '${t}'),\n       (2, 'Raspberrypi', '${t}')`\n       \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 120,
+        "wires": [
+            [
+                "d988ca2371001f10"
+            ]
+        ]
+    },
+    {
+        "id": "cc6914e89b886f5a",
+        "type": "mqtt in",
+        "z": "0fcef1cc74fdce6b",
+        "name": "MQTT input",
+        "topic": "Sensor",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "3449d0bf5569c8b0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 90,
+        "y": 180,
+        "wires": [
+            [
+                "97eed5e5f9208dc0"
+            ]
+        ]
+    },
+    {
+        "id": "97eed5e5f9208dc0",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "add timestamp",
+        "func": "msg.timestamp = Date.now()\nif (msg.topic == 'Sensor')\n    msg.topic =\n        `INSERT INTO Data(deviceID, sensorName, sensorValue, timestamp)\n        VALUES (${msg.payload.deviceID}, \"${msg.payload.sensorName}\", ${msg.payload.sensorValue}, ${msg.timestamp})\n        RETURNING id;`\n        \n    msg.series = msg.payload.sensorName\n    msg.payload = msg.payload.sensorValue\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 180,
+        "wires": [
+            [
+                "913e5a5f0ac2299a",
+                "0b6bdfba78291023"
+            ]
+        ]
+    },
+    {
+        "id": "913e5a5f0ac2299a",
+        "type": "sqlite",
+        "z": "0fcef1cc74fdce6b",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "msg.topic",
+        "sql": "",
+        "name": "Insert Data",
+        "x": 110,
+        "y": 260,
+        "wires": [
+            [
+                "06058f6d4dc0cf16"
+            ]
+        ]
+    },
+    {
+        "id": "d6b3e4edf3c90271",
+        "type": "mqtt out",
+        "z": "0fcef1cc74fdce6b",
+        "name": "MQTT output",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "3449d0bf5569c8b0",
+        "x": 850,
+        "y": 720,
+        "wires": []
+    },
+    {
+        "id": "5d0609aae896c27f",
+        "type": "ui_chart",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "013e9385b9f24553",
+        "order": 1,
+        "width": 14,
+        "height": 7,
+        "label": "HUMIDITY",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#004475",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#ff0505",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 990,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "55bc6f76ea0fddfd",
+        "type": "sqlite",
+        "z": "0fcef1cc74fdce6b",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "fixed",
+        "sql": "SELECT * FROM Data\nWHERE sensorName = \"DHT11-Humidity\";",
+        "name": "Query Humidity",
+        "x": 340,
+        "y": 500,
+        "wires": [
+            [
+                "5fa3c611525d2dcc"
+            ]
+        ]
+    },
+    {
+        "id": "a0f5e9a22f0f486d",
+        "type": "inject",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "x": 110,
+        "y": 540,
+        "wires": [
+            [
+                "55bc6f76ea0fddfd",
+                "143ae4cc0de2313b",
+                "4c419e10a11bcdde",
+                "5a680dbe959289fe",
+                "aa58dfd17550f82e",
+                "39de76411cf8b68f"
+            ]
+        ]
+    },
+    {
+        "id": "5fa3c611525d2dcc",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Restructure input",
+        "func": "var data = msg.payload.map(function(item) {\n  return {'x': item['timestamp'], 'y': item['sensorValue']};\n});\n\nmsg.payload = [{\n\"series\": [\"DHT11-Humidity\"],\n\"data\": [data],\n\"labels\": [\"\"]\n}]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 500,
+        "wires": [
+            [
+                "5d0609aae896c27f"
+            ]
+        ]
+    },
+    {
+        "id": "143ae4cc0de2313b",
+        "type": "sqlite",
+        "z": "0fcef1cc74fdce6b",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "fixed",
+        "sql": "SELECT * FROM Data\nWHERE sensorName = \"DHT11-Temperature\";",
+        "name": "Query Temperature",
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "4f06cb6d8450c779"
+            ]
+        ]
+    },
+    {
+        "id": "4c419e10a11bcdde",
+        "type": "sqlite",
+        "z": "0fcef1cc74fdce6b",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "fixed",
+        "sql": "SELECT * FROM Data\nWHERE sensorName = \"BH-1750\";",
+        "name": "Query Lux",
+        "x": 330,
+        "y": 380,
+        "wires": [
+            [
+                "a47d2aa8563916c7"
+            ]
+        ]
+    },
+    {
+        "id": "4f06cb6d8450c779",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Restructure input",
+        "func": "var data = msg.payload.map(function(item) {\n  return {'x': item['timestamp'], 'y': item['sensorValue']};\n});\n\nmsg.payload = [{\n\"series\": [\"DHT11-Temperature\"],\n\"data\": [data],\n\"labels\": [\"\"]\n}]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 440,
+        "wires": [
+            [
+                "de915205756f976b"
+            ]
+        ]
+    },
+    {
+        "id": "a47d2aa8563916c7",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Restructure input",
+        "func": "var data = msg.payload.map(function(item) {\n  return {'x': item['timestamp'], 'y': item['sensorValue']};\n});\n\nmsg.payload = [{\n\"series\": [\"BH-1750\"],\n\"data\": [data],\n\"labels\": [\"\"]\n}]\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 380,
+        "wires": [
+            [
+                "db15b02b2d053fbe"
+            ]
+        ]
+    },
+    {
+        "id": "de915205756f976b",
+        "type": "ui_chart",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "013e9385b9f24553",
+        "order": 2,
+        "width": 14,
+        "height": 7,
+        "label": "TEMPERATURE",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#ff0000",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#ff0505",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1010,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "db15b02b2d053fbe",
+        "type": "ui_chart",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "013e9385b9f24553",
+        "order": 4,
+        "width": 14,
+        "height": 7,
+        "label": "LUX",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#0e7500",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#ff0505",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 970,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df15224a5c25f154",
+        "type": "sqlite",
+        "z": "0fcef1cc74fdce6b",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "fixed",
+        "sql": "SELECT Data.id, Data.deviceID, Data.sensorName, Data.sensorValue, Data.timestamp, dev.deviceName\nFROM Data\nINNER JOIN Devices dev ON Data.deviceID = dev.deviceID;\n",
+        "name": "Querry ALL",
+        "x": 550,
+        "y": 560,
+        "wires": [
+            [
+                "b1726630fe889f72"
+            ]
+        ]
+    },
+    {
+        "id": "b1726630fe889f72",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Restructure input",
+        "func": "function pad2(n) {  // always returns a string\n    return (n < 10 ? '0' : '') + n;\n}\n\nfunction gett(x) {\n    return x.getFullYear() + '-' +\n        pad2(x.getMonth() + 1) + '-' +\n        pad2(x.getDate()) + ' ' +\n        pad2(x.getHours()) + ':' +\n        pad2(x.getMinutes()) + ':' +\n        pad2(x.getSeconds());\n}\n\nvar data = msg.payload.map(function (item) {\n  item.timestr = gett(new Date(item.timestamp))\n});\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 560,
+        "wires": [
+            [
+                "c2e4df5ba273447f"
+            ]
+        ]
+    },
+    {
+        "id": "b07149ab7d9231ec",
+        "type": "ui_table",
+        "z": "0fcef1cc74fdce6b",
+        "group": "cb36f86f0e36adb3",
+        "name": "Data log",
+        "order": 3,
+        "width": 24,
+        "height": 10,
+        "columns": [
+            {
+                "field": "id",
+                "title": "ID",
+                "width": "10%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "deviceID",
+                "title": "Device ID",
+                "width": "10%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "deviceName",
+                "title": "Device Name",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "sensorName",
+                "title": "Sensor Name",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "sensorValue",
+                "title": "Sensor Value",
+                "width": "20%",
+                "align": "center",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "timestr",
+                "title": "Timestamp",
+                "width": "20%",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1020,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "c2e4df5ba273447f",
+        "type": "change",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Set Filter",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ui_control",
+                "pt": "msg",
+                "to": "{\t    \"tabulator\": {\t        \"columns\": [\t            {\t            \"field\": \"id\",\t            \"headerFilter\": \"input\"\t            },\t            {\t            \"field\": \"deviceID\",\t            \"headerFilter\": \"input\"\t            },\t            {\t            \"field\": \"deviceName\",\t            \"headerFilter\": \"input\"\t            },\t            {\t            \"field\": \"sensorName\",\t            \"headerFilter\": \"input\"\t            },\t            {\t            \"field\": \"sensorValue\",\t            \"headerFilter\": \"input\"\t            },\t            {\t            \"field\": \"timestr\",\t            \"headerFilter\": \"input\"\t            }\t        ]\t    }\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 980,
+        "y": 560,
+        "wires": [
+            [
+                "b07149ab7d9231ec"
+            ]
+        ]
+    },
+    {
+        "id": "752421a4605424c0",
+        "type": "ui_button",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Download",
+        "group": "cb36f86f0e36adb3",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "Download",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "file_download",
+        "payload": "",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 560,
+        "y": 620,
+        "wires": [
+            [
+                "7633aa7e625c1a63"
+            ]
+        ]
+    },
+    {
+        "id": "7633aa7e625c1a63",
+        "type": "change",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Set File Name",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "{\t   \"command\":\"download\",\t    \"arguments\":[\t        \"csv\",\t        \"file.csv\"\t    ]\t}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 760,
+        "y": 620,
+        "wires": [
+            [
+                "b07149ab7d9231ec"
+            ]
+        ]
+    },
+    {
+        "id": "5a680dbe959289fe",
+        "type": "ui_switch",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "label": "Light1",
+        "tooltip": "",
+        "group": "532c89762ab7aacd",
+        "order": 21,
+        "width": 5,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "1",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "flash_on",
+        "oncolor": "red",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "flash_off",
+        "offcolor": "black",
+        "animate": true,
+        "className": "",
+        "x": 330,
+        "y": 700,
+        "wires": [
+            [
+                "314dc9c2f78aa9a3"
+            ]
+        ]
+    },
+    {
+        "id": "aa58dfd17550f82e",
+        "type": "ui_switch",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "label": "Light2",
+        "tooltip": "",
+        "group": "532c89762ab7aacd",
+        "order": 28,
+        "width": 5,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "2",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "flash_on",
+        "oncolor": "red",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "flash_off",
+        "offcolor": "black",
+        "animate": true,
+        "className": "",
+        "x": 330,
+        "y": 760,
+        "wires": [
+            [
+                "314dc9c2f78aa9a3"
+            ]
+        ]
+    },
+    {
+        "id": "546d1658fbfba2db",
+        "type": "ui_gauge",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "532c89762ab7aacd",
+        "order": 18,
+        "width": 7,
+        "height": 6,
+        "gtype": "donut",
+        "title": "Lux",
+        "label": "lux",
+        "format": "{{value}}",
+        "min": "1",
+        "max": "65535",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 890,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "c72854f57b7d4d17",
+        "type": "ui_gauge",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "532c89762ab7aacd",
+        "order": 1,
+        "width": 7,
+        "height": 7,
+        "gtype": "compass",
+        "title": "Temperature",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 910,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "9b32ac2097d3b062",
+        "type": "ui_gauge",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "532c89762ab7aacd",
+        "order": 3,
+        "width": 7,
+        "height": 7,
+        "gtype": "wave",
+        "title": "Humidity",
+        "label": "%",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 900,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "314dc9c2f78aa9a3",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Write MQTT message",
+        "func": "const lightID = msg.topic\nconst status = msg.payload\nmsg.topic = 'Light'\nmsg.payload = {\n    lightID: lightID,\n    status: status\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 720,
+        "wires": [
+            [
+                "d6b3e4edf3c90271"
+            ]
+        ]
+    },
+    {
+        "id": "0b6bdfba78291023",
+        "type": "switch",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "property": "series",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "BH-1750",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DHT11-Temperature",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "DHT11-Humidity",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 3,
+        "x": 550,
+        "y": 180,
+        "wires": [
+            [
+                "db15b02b2d053fbe",
+                "546d1658fbfba2db"
+            ],
+            [
+                "de915205756f976b",
+                "c72854f57b7d4d17"
+            ],
+            [
+                "5d0609aae896c27f",
+                "9b32ac2097d3b062"
+            ]
+        ]
+    },
+    {
+        "id": "8bb81e1e950c9477",
+        "type": "sqlite",
+        "z": "0fcef1cc74fdce6b",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "prepared",
+        "sql": "SELECT Data.id, Data.deviceID, Data.sensorName, Data.sensorValue, Data.timestamp, dev.deviceName\nFROM Data\nINNER JOIN Devices dev ON Data.deviceID = dev.deviceID\nWHERE Data.id = $id;\n",
+        "name": "Get the last item",
+        "x": 500,
+        "y": 260,
+        "wires": [
+            [
+                "11d9b9a46aeffb50"
+            ]
+        ]
+    },
+    {
+        "id": "11d9b9a46aeffb50",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Restructure input",
+        "func": "function pad2(n) {  // always returns a string\n    return (n < 10 ? '0' : '') + n;\n}\n\nfunction gett(x) {\n    return x.getFullYear() + '-' +\n        pad2(x.getMonth() + 1) + '-' +\n        pad2(x.getDate()) + ' ' +\n        pad2(x.getHours()) + ':' +\n        pad2(x.getMinutes()) + ':' +\n        pad2(x.getSeconds());\n}\n\nmsg.payload.map(function (item) {\n  item.timestr = gett(new Date(item.timestamp))\n});\n\nmsg.payload = {\n   \"command\":\"addData\",\n    \"arguments\":[\n        msg.payload\n    ],\n    \"returnPromise\":true\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 320,
+        "wires": [
+            [
+                "b07149ab7d9231ec"
+            ]
+        ]
+    },
+    {
+        "id": "06058f6d4dc0cf16",
+        "type": "change",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "params",
+                "pt": "msg",
+                "to": "{\"$id\": msg.payload[0].id}",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 260,
+        "wires": [
+            [
+                "8bb81e1e950c9477"
+            ]
+        ]
+    },
+    {
+        "id": "abe39a39688111b0",
+        "type": "ui_ui_control",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "events": "change",
+        "x": 340,
+        "y": 620,
+        "wires": [
+            [
+                "df15224a5c25f154"
+            ]
+        ]
+    },
+    {
+        "id": "39de76411cf8b68f",
+        "type": "change",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 320,
+        "y": 560,
+        "wires": [
+            [
+                "abe39a39688111b0"
+            ]
+        ]
+    },
+    {
+        "id": "2c1ee9e69145c4ab",
+        "type": "ui_gauge",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "9784f4e4d5314667",
+        "order": 1,
+        "width": 8,
+        "height": 8,
+        "gtype": "donut",
+        "title": "Wemos",
+        "label": "seconds",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "10",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 980,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "8cb6121c829fda4f",
+        "type": "ui_gauge",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "group": "9784f4e4d5314667",
+        "order": 2,
+        "width": 8,
+        "height": 8,
+        "gtype": "donut",
+        "title": "Raspberrypi",
+        "label": "seconds",
+        "format": "{{value}}",
+        "min": 0,
+        "max": 10,
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 990,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "726e221195de2d38",
+        "type": "switch",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "property": "deviceID",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 770,
+        "y": 80,
+        "wires": [
+            [
+                "2c1ee9e69145c4ab"
+            ],
+            [
+                "8cb6121c829fda4f"
+            ]
+        ]
+    },
+    {
+        "id": "83f1763c415b9a27",
+        "type": "inject",
+        "z": "0fcef1cc74fdce6b",
+        "name": "Start",
+        "props": [],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0",
+        "topic": "",
+        "x": 70,
+        "y": 80,
+        "wires": [
+            [
+                "52d73cc671d9de97",
+                "9d13d1b08ddfb1ca"
+            ]
+        ]
+    },
+    {
+        "id": "6490e74e985166e3",
+        "type": "sqlite",
+        "z": "0fcef1cc74fdce6b",
+        "mydb": "ad674f65122886d4",
+        "sqlquery": "prepared",
+        "sql": "SELECT timestamp, DeviceID\nFROM Data\nWHERE DeviceID=$id\nORDER BY id DESC\nLIMIT 1;\n",
+        "name": "Get the last item",
+        "x": 420,
+        "y": 80,
+        "wires": [
+            [
+                "63d96d709fb9f805"
+            ]
+        ]
+    },
+    {
+        "id": "52d73cc671d9de97",
+        "type": "change",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "params",
+                "pt": "msg",
+                "to": "{\"$id\":1}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 60,
+        "wires": [
+            [
+                "6490e74e985166e3"
+            ]
+        ]
+    },
+    {
+        "id": "9d13d1b08ddfb1ca",
+        "type": "change",
+        "z": "0fcef1cc74fdce6b",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "params",
+                "pt": "msg",
+                "to": "{\"$id\":2}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 220,
+        "y": 100,
+        "wires": [
+            [
+                "6490e74e985166e3"
+            ]
+        ]
+    },
+    {
+        "id": "63d96d709fb9f805",
+        "type": "function",
+        "z": "0fcef1cc74fdce6b",
+        "name": "add timestamp",
+        "func": "msg.deviceID = msg.payload[0].deviceID\nmsg.payload = Math.floor((Date.now() - msg.payload[0].timestamp)/1000)\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 80,
+        "wires": [
+            [
+                "726e221195de2d38"
+            ]
+        ]
+    }
+]

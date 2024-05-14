@@ -1,0 +1,3 @@
+node-red-node-sqlite
+node-red-dashboard
+node-red-node-ui-table
