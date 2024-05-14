@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  mqtt-broker:
+    image: eclipse-mosquitto
+    ports:
+      - 1883:1883
+    volumes:
+      - .\mosquitto\config:/mosquitto/config
+    restart: always
+
+  node-red:
+    image: nodered/node-red
+    depends_on:
+      - mqtt-broker
+    ports:
+      - 1880:1880
+    volumes:
+      - .\nodered\data:/data
+    environment:
+      - TZ=Asia/Ho_Chi_Minh
+    restart: always
+
