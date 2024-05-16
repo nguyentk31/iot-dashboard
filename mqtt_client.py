@@ -68,42 +68,38 @@ if __name__ == '__main__':
 
   try:
     while True:
-      lux = random.randint(0 if lux - 500 < 0 else lux - 500, 65535 if lux + 500 > 65535 else lux + 500)
-      tem = random.randint(0 if tem - 5 < 0 else tem - 5, 50 if tem + 5 > 50 else tem + 5)
-      hum = random.randint(20 if hum - 5 < 20 else hum - 5, 90 if hum + 5 > 90 else hum + 5)
+      lux = random.uniform(0 if lux - 500 < 0 else lux - 500, 65535 if lux + 500 > 65535 else lux + 500)
+      tem = random.uniform(0 if tem - 5 < 0 else tem - 5, 50 if tem + 5 > 50 else tem + 5)
+      hum = random.uniform(20 if hum - 5 < 20 else hum - 5, 90 if hum + 5 > 90 else hum + 5)
+
       mqtt_client.publish(
         'Sensor', 
         {
           'deviceID': 1,
           'sensorName': 'BH-1750',
-          'sensorValue': lux,
+          'sensorValue': f"{lux:.2f}",
         }
       )
       print('sleep...zzz')
       sleep(random.randint(0, 5))
-
       mqtt_client.publish(
         'Sensor', 
         {
           'deviceID': 2,
           'sensorName': 'DHT11-Temperature',
-          'sensorValue': tem,
+          'sensorValue': f"{tem:.2f}",
         }
       )
-      print('sleep...zzz')
-      sleep(random.randint(0, 5))
-
       mqtt_client.publish(
         'Sensor', 
         {
           'deviceID': 2,
           'sensorName': 'DHT11-Humidity',
-          'sensorValue': hum,
+          'sensorValue': f"{hum:.2f}",
         }
       )
       print('sleep...zzz')
       sleep(random.randint(0, 5))
-
   except KeyboardInterrupt:
     print('MQTT stopping!')
     mqtt_client.stop()

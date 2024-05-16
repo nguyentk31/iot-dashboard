@@ -8,7 +8,7 @@ from paho.mqtt import client
 sensor = adafruit_dht.DHT11(board.D4)
 
 ## MQTT
-broker = 'localhost'
+broker = 'DESKTOP-B3JQ5UH'
 port = 1883
 client_id = 'raspberry-pi'
 username = 'iot'
@@ -44,13 +44,13 @@ if __name__ == '__main__':
       try:
         temperature_c = sensor.temperature
         humidity = sensor.humidity
-        print("Temp={0:0.1f}ºC, Humidity={2:0.1f}%".format(temperature_c, humidity))
+        print("Temp={0:0.1f}ºC, Humidity={1:0.1f}%".format(temperature_c, humidity))
 
         mqtt_publish('Sensor', 
           {
             'deviceID': 2,
             'sensorName': 'DHT11-Temperature',
-            'sensorValue': temperature_c,
+            'sensorValue': round(temperature_c, 1),
           }
         )
 
@@ -58,7 +58,7 @@ if __name__ == '__main__':
           {
             'deviceID': 2,
             'sensorName': 'DHT11-Humidity',
-            'sensorValue': humidity,
+            'sensorValue': round(humidity, 1),
           }
         )
 
@@ -68,7 +68,7 @@ if __name__ == '__main__':
         sleep(2)
         continue
 
-      sleep(5)
+      sleep(2)
   except KeyboardInterrupt:
     sensor.exit()
     print('MQTT stopping!')

@@ -16,12 +16,12 @@ short leds_pin[2] = {D6, D7};
 #define password "UiTiOtAP"
 
 #define mqtt_cient_id "wemos"
-#define mqtt_server "172.31.11.158"
+#define mqtt_server "172.31.10.18"
 #define mqtt_port 1883
-#define mqtt_topic_light "Light"
-#define mqtt_topic_sensor "Sensor"
 #define mqtt_user "iot"
 #define mqtt_pwd "123456"
+#define mqtt_topic_light "Light"
+#define mqtt_topic_sensor "Sensor"
 
 WiFiClient WIFI_CLIENT;
 PubSubClient client(WIFI_CLIENT);
@@ -32,15 +32,15 @@ void callback(char* topic, byte* payload, unsigned int length) {
   Serial.print(topic);
   Serial.print("] ");
   String payload_str = String(( char *) payload);
-  Serial.println(payload_str);
-  if (topic == "Light") {
+  if (strcmp(topic, "Light") == 0) {
+    Serial.println("Light topic");
     StaticJsonDocument<2048> msg;
     deserializeJson(msg, payload_str);
-    action(msg["lightID"].toInt(), msg["status"].toInt());
+    action(msg["lightID"], msg["status"]);
   }
 }
 
-void action(int lightID, int status){
+void action(int lightID, int status) {
   digitalWrite(leds_pin[lightID], status);
 }
 
@@ -59,7 +59,7 @@ void setup_wifi() {
 
 void setup() {
   for (int i = 0; i < 2; i++) {
-    pinMode(leds_pin[i], OUTPUT)
+    pinMode(leds_pin[i], OUTPUT);
   }
 
   Serial.begin(9600);
@@ -108,12 +108,12 @@ void loop() {
   StaticJsonDocument<2048> body;
   body["deviceID"] = 1;
   body["sensorName"] = "BH-1750";
-  body["sensorValue"] = lux;
+  body["sensorValue"] = round(lux * 10) / 10.0;
   serializeJson(body, msg); 
   Serial.println((char*)msg.c_str());
-  Serial.println(client.publish(mqtt_topic_light, (char*)msg.c_str()));
+  Serial.println(client.publish(mqtt_topic_sensor, (char*)msg.c_str()));
 
   client.loop();
-  delay(5000);
+  delay(2000);
 }
 

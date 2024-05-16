@@ -161,7 +161,7 @@
         "tab": "5672170ac99d8c76",
         "order": 1,
         "disp": true,
-        "width": "28",
+        "width": 30,
         "collapse": false,
         "className": ""
     },
@@ -181,165 +181,15 @@
         "hidden": false
     },
     {
-        "id": "84992abfa43f187f",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 3,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "38afb03de048d41e",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 5,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "f9b3a228c1a470c7",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 6,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "2f92700beb815946",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 7,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "403f12fd901afccd",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 8,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "48252053b7da6b98",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 9,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "5b5e9ec56c5e5fd5",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 10,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "353c9e8c53958a45",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 11,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "91622819c20a79b4",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 12,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "572e5d1a26679fa7",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 13,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "bec1f17d620107c5",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 14,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "dcd1c3dd2d97c435",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 15,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "9494bf7f68529454",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 16,
-        "width": 7,
-        "height": 1
-    },
-    {
-        "id": "9c77adf01dc3bd04",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "013e9385b9f24553",
-        "order": 17,
-        "width": 7,
-        "height": 1
-    },
-    {
         "id": "cb36f86f0e36adb3",
         "type": "ui_group",
         "name": "",
         "tab": "ce0b4f3c1e3099c8",
         "order": 2,
         "disp": true,
-        "width": "24",
+        "width": 30,
         "collapse": false,
         "className": ""
-    },
-    {
-        "id": "4a36c6c0d1c51f24",
-        "type": "ui_spacer",
-        "z": "0fcef1cc74fdce6b",
-        "name": "spacer",
-        "group": "cb36f86f0e36adb3",
-        "order": 1,
-        "width": 20,
-        "height": 1
     },
     {
         "id": "55825627ceaa4854",
@@ -682,6 +532,16 @@
         "height": 1
     },
     {
+        "id": "6b41f83b67e1897b",
+        "type": "ui_spacer",
+        "z": "0fcef1cc74fdce6b",
+        "name": "spacer",
+        "group": "cb36f86f0e36adb3",
+        "order": 1,
+        "width": 26,
+        "height": 1
+    },
+    {
         "id": "a6218462e057ea7a",
         "type": "sqlite",
         "z": "fea082c9970a61e7",
@@ -689,8 +549,8 @@
         "sqlquery": "fixed",
         "sql": "CREATE TABLE IF NOT EXISTS Devices (\n  deviceID INTEGER PRIMARY KEY,\n  deviceName TEXT,\n  createTime INTEGER\n);",
         "name": "Create Devices table",
-        "x": 360,
-        "y": 120,
+        "x": 300,
+        "y": 60,
         "wires": [
             [
                 "ab42c16e9126b519",
@@ -709,8 +569,8 @@
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
-        "x": 150,
-        "y": 120,
+        "x": 90,
+        "y": 60,
         "wires": [
             [
                 "a6218462e057ea7a"
@@ -724,9 +584,9 @@
         "mydb": "ad674f65122886d4",
         "sqlquery": "msg.topic",
         "sql": "INSERT INTO Devices (deviceID, deviceName, )\nVALUES (1, 'Wemos', ),\n       (2, 'Raspberrypi');\n",
-        "name": "Insert Device Tables",
-        "x": 820,
-        "y": 120,
+        "name": "Insert Device Data",
+        "x": 750,
+        "y": 60,
         "wires": [
             []
         ]
@@ -739,8 +599,8 @@
         "sqlquery": "fixed",
         "sql": "CREATE TABLE IF NOT EXISTS Data (\n  id INTEGER PRIMARY KEY AUTOINCREMENT,\n  deviceID INTEGER,\n  sensorName TEXT,\n  sensorValue FLOAT,\n  timestamp INTEGER,\n\n  FOREIGN KEY(deviceID) REFERENCES Devices(deviceID)\n);",
         "name": "Create Data table",
-        "x": 350,
-        "y": 200,
+        "x": 550,
+        "y": 160,
         "wires": [
             []
         ]
@@ -757,8 +617,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
-        "y": 120,
+        "x": 540,
+        "y": 60,
         "wires": [
             [
                 "d988ca2371001f10"
@@ -778,8 +638,8 @@
         "rap": true,
         "rh": 0,
         "inputs": 0,
-        "x": 90,
-        "y": 180,
+        "x": 370,
+        "y": 300,
         "wires": [
             [
                 "97eed5e5f9208dc0"
@@ -798,8 +658,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 180,
+        "x": 600,
+        "y": 300,
         "wires": [
             [
                 "913e5a5f0ac2299a",
@@ -815,8 +675,8 @@
         "sqlquery": "msg.topic",
         "sql": "",
         "name": "Insert Data",
-        "x": 110,
-        "y": 260,
+        "x": 510,
+        "y": 440,
         "wires": [
             [
                 "06058f6d4dc0cf16"
@@ -837,8 +697,8 @@
         "correl": "",
         "expiry": "",
         "broker": "3449d0bf5569c8b0",
-        "x": 850,
-        "y": 720,
+        "x": 790,
+        "y": 200,
         "wires": []
     },
     {
@@ -848,8 +708,8 @@
         "name": "",
         "group": "013e9385b9f24553",
         "order": 1,
-        "width": 14,
-        "height": 7,
+        "width": 0,
+        "height": 0,
         "label": "HUMIDITY",
         "chartType": "line",
         "legend": "false",
@@ -879,8 +739,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 990,
-        "y": 500,
+        "x": 1170,
+        "y": 680,
         "wires": [
             []
         ]
@@ -893,8 +753,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT * FROM Data\nWHERE sensorName = \"DHT11-Humidity\";",
         "name": "Query Humidity",
-        "x": 340,
-        "y": 500,
+        "x": 520,
+        "y": 680,
         "wires": [
             [
                 "5fa3c611525d2dcc"
@@ -913,7 +773,7 @@
         "onceDelay": "0",
         "topic": "",
         "x": 110,
-        "y": 540,
+        "y": 200,
         "wires": [
             [
                 "55bc6f76ea0fddfd",
@@ -937,8 +797,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 500,
+        "x": 750,
+        "y": 680,
         "wires": [
             [
                 "5d0609aae896c27f"
@@ -953,8 +813,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT * FROM Data\nWHERE sensorName = \"DHT11-Temperature\";",
         "name": "Query Temperature",
-        "x": 350,
-        "y": 440,
+        "x": 530,
+        "y": 620,
         "wires": [
             [
                 "4f06cb6d8450c779"
@@ -969,8 +829,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT * FROM Data\nWHERE sensorName = \"BH-1750\";",
         "name": "Query Lux",
-        "x": 330,
-        "y": 380,
+        "x": 510,
+        "y": 560,
         "wires": [
             [
                 "a47d2aa8563916c7"
@@ -989,8 +849,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 440,
+        "x": 750,
+        "y": 620,
         "wires": [
             [
                 "de915205756f976b"
@@ -1009,8 +869,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 380,
+        "x": 750,
+        "y": 560,
         "wires": [
             [
                 "db15b02b2d053fbe"
@@ -1024,8 +884,8 @@
         "name": "",
         "group": "013e9385b9f24553",
         "order": 2,
-        "width": 14,
-        "height": 7,
+        "width": 0,
+        "height": 0,
         "label": "TEMPERATURE",
         "chartType": "line",
         "legend": "false",
@@ -1055,8 +915,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 1010,
-        "y": 440,
+        "x": 1190,
+        "y": 620,
         "wires": [
             []
         ]
@@ -1067,9 +927,9 @@
         "z": "0fcef1cc74fdce6b",
         "name": "",
         "group": "013e9385b9f24553",
-        "order": 4,
-        "width": 14,
-        "height": 7,
+        "order": 3,
+        "width": 0,
+        "height": 0,
         "label": "LUX",
         "chartType": "line",
         "legend": "false",
@@ -1099,8 +959,8 @@
         "outputs": 1,
         "useDifferentColor": false,
         "className": "",
-        "x": 970,
-        "y": 380,
+        "x": 1150,
+        "y": 560,
         "wires": [
             []
         ]
@@ -1113,8 +973,8 @@
         "sqlquery": "fixed",
         "sql": "SELECT Data.id, Data.deviceID, Data.sensorName, Data.sensorValue, Data.timestamp, dev.deviceName\nFROM Data\nINNER JOIN Devices dev ON Data.deviceID = dev.deviceID;\n",
         "name": "Querry ALL",
-        "x": 550,
-        "y": 560,
+        "x": 510,
+        "y": 740,
         "wires": [
             [
                 "b1726630fe889f72"
@@ -1134,7 +994,7 @@
         "finalize": "",
         "libs": [],
         "x": 750,
-        "y": 560,
+        "y": 740,
         "wires": [
             [
                 "c2e4df5ba273447f"
@@ -1148,8 +1008,8 @@
         "group": "cb36f86f0e36adb3",
         "name": "Data log",
         "order": 3,
-        "width": 24,
-        "height": 10,
+        "width": 30,
+        "height": 12,
         "columns": [
             {
                 "field": "id",
@@ -1214,8 +1074,8 @@
         ],
         "outputs": 0,
         "cts": false,
-        "x": 1020,
-        "y": 640,
+        "x": 1160,
+        "y": 740,
         "wires": []
     },
     {
@@ -1237,8 +1097,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 980,
-        "y": 560,
+        "x": 940,
+        "y": 740,
         "wires": [
             [
                 "b07149ab7d9231ec"
@@ -1265,8 +1125,8 @@
         "payloadType": "str",
         "topic": "topic",
         "topicType": "msg",
-        "x": 560,
-        "y": 620,
+        "x": 720,
+        "y": 800,
         "wires": [
             [
                 "7633aa7e625c1a63"
@@ -1292,8 +1152,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 760,
-        "y": 620,
+        "x": 960,
+        "y": 800,
         "wires": [
             [
                 "b07149ab7d9231ec"
@@ -1313,7 +1173,7 @@
         "height": 2,
         "passthru": true,
         "decouple": "false",
-        "topic": "1",
+        "topic": "0",
         "topicType": "str",
         "style": "",
         "onvalue": "true",
@@ -1326,8 +1186,8 @@
         "offcolor": "black",
         "animate": true,
         "className": "",
-        "x": 330,
-        "y": 700,
+        "x": 350,
+        "y": 180,
         "wires": [
             [
                 "314dc9c2f78aa9a3"
@@ -1347,7 +1207,7 @@
         "height": 2,
         "passthru": true,
         "decouple": "false",
-        "topic": "2",
+        "topic": "1",
         "topicType": "str",
         "style": "",
         "onvalue": "true",
@@ -1360,8 +1220,8 @@
         "offcolor": "black",
         "animate": true,
         "className": "",
-        "x": 330,
-        "y": 760,
+        "x": 350,
+        "y": 220,
         "wires": [
             [
                 "314dc9c2f78aa9a3"
@@ -1382,7 +1242,7 @@
         "label": "lux",
         "format": "{{value}}",
         "min": "1",
-        "max": "65535",
+        "max": "30000",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1392,8 +1252,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 890,
-        "y": 140,
+        "x": 1150,
+        "y": 260,
         "wires": []
     },
     {
@@ -1410,7 +1270,7 @@
         "label": "ºC",
         "format": "{{value}}",
         "min": "0",
-        "max": "100",
+        "max": "50",
         "colors": [
             "#00b500",
             "#e6e600",
@@ -1420,8 +1280,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 910,
-        "y": 180,
+        "x": 1170,
+        "y": 300,
         "wires": []
     },
     {
@@ -1431,8 +1291,8 @@
         "name": "",
         "group": "532c89762ab7aacd",
         "order": 3,
-        "width": 7,
-        "height": 7,
+        "width": "7",
+        "height": "7",
         "gtype": "wave",
         "title": "Humidity",
         "label": "%",
@@ -1448,8 +1308,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 900,
-        "y": 220,
+        "x": 1160,
+        "y": 340,
         "wires": []
     },
     {
@@ -1457,15 +1317,15 @@
         "type": "function",
         "z": "0fcef1cc74fdce6b",
         "name": "Write MQTT message",
-        "func": "const lightID = msg.topic\nconst status = msg.payload\nmsg.topic = 'Light'\nmsg.payload = {\n    lightID: lightID,\n    status: status\n}\nreturn msg;",
+        "func": "const lightID = parseInt(msg.topic)\nconst status = msg.payload\nmsg.topic = 'Light'\nmsg.payload = {\n    lightID: lightID,\n    status: status\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 580,
-        "y": 720,
+        "x": 560,
+        "y": 200,
         "wires": [
             [
                 "d6b3e4edf3c90271"
@@ -1499,8 +1359,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 3,
-        "x": 550,
-        "y": 180,
+        "x": 850,
+        "y": 300,
         "wires": [
             [
                 "db15b02b2d053fbe",
@@ -1524,8 +1384,8 @@
         "sqlquery": "prepared",
         "sql": "SELECT Data.id, Data.deviceID, Data.sensorName, Data.sensorValue, Data.timestamp, dev.deviceName\nFROM Data\nINNER JOIN Devices dev ON Data.deviceID = dev.deviceID\nWHERE Data.id = $id;\n",
         "name": "Get the last item",
-        "x": 500,
-        "y": 260,
+        "x": 520,
+        "y": 500,
         "wires": [
             [
                 "11d9b9a46aeffb50"
@@ -1544,8 +1404,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 570,
-        "y": 320,
+        "x": 750,
+        "y": 500,
         "wires": [
             [
                 "b07149ab7d9231ec"
@@ -1571,8 +1431,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 300,
-        "y": 260,
+        "x": 740,
+        "y": 440,
         "wires": [
             [
                 "8bb81e1e950c9477"
@@ -1585,8 +1445,8 @@
         "z": "0fcef1cc74fdce6b",
         "name": "",
         "events": "change",
-        "x": 340,
-        "y": 620,
+        "x": 320,
+        "y": 740,
         "wires": [
             [
                 "df15224a5c25f154"
@@ -1612,8 +1472,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 320,
-        "y": 560,
+        "x": 140,
+        "y": 740,
         "wires": [
             [
                 "abe39a39688111b0"
@@ -1644,8 +1504,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 980,
-        "y": 40,
+        "x": 1140,
+        "y": 60,
         "wires": []
     },
     {
@@ -1672,8 +1532,8 @@
         "seg2": "",
         "diff": false,
         "className": "",
-        "x": 990,
-        "y": 80,
+        "x": 1150,
+        "y": 100,
         "wires": []
     },
     {
@@ -1698,7 +1558,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 770,
+        "x": 950,
         "y": 80,
         "wires": [
             [
@@ -1713,14 +1573,14 @@
         "id": "83f1763c415b9a27",
         "type": "inject",
         "z": "0fcef1cc74fdce6b",
-        "name": "Start",
+        "name": "Loop every 1s",
         "props": [],
         "repeat": "1",
         "crontab": "",
         "once": true,
         "onceDelay": "0",
         "topic": "",
-        "x": 70,
+        "x": 140,
         "y": 80,
         "wires": [
             [
@@ -1737,7 +1597,7 @@
         "sqlquery": "prepared",
         "sql": "SELECT timestamp, DeviceID\nFROM Data\nWHERE DeviceID=$id\nORDER BY id DESC\nLIMIT 1;\n",
         "name": "Get the last item",
-        "x": 420,
+        "x": 580,
         "y": 80,
         "wires": [
             [
@@ -1749,7 +1609,7 @@
         "id": "52d73cc671d9de97",
         "type": "change",
         "z": "0fcef1cc74fdce6b",
-        "name": "",
+        "name": "Set deviceID:1",
         "rules": [
             {
                 "t": "set",
@@ -1764,7 +1624,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
+        "x": 380,
         "y": 60,
         "wires": [
             [
@@ -1776,7 +1636,7 @@
         "id": "9d13d1b08ddfb1ca",
         "type": "change",
         "z": "0fcef1cc74fdce6b",
-        "name": "",
+        "name": "Set deviceID:2",
         "rules": [
             {
                 "t": "set",
@@ -1791,7 +1651,7 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 220,
+        "x": 380,
         "y": 100,
         "wires": [
             [
@@ -1811,7 +1671,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 600,
+        "x": 780,
         "y": 80,
         "wires": [
             [
